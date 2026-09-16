@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PulseAndPixelNet</title>
+<style>
+  :root {
+    --bg: #0f1113;
+    --surface: #17191c;
+    --text: #f2f1ec;
+    --text-muted: #9a9a95;
+    --border: #2a2c2f;
+    --accent: #6ee7c2;
+    --accent-2: #8b7cf6;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f5f1;
+      --surface: #ffffff;
+      --text: #17191c;
+      --text-muted: #63625c;
+      --border: #e3e1d8;
+      --accent: #128a63;
+      --accent-2: #5b4cd1;
+    }
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    padding-inline: 20px;
+    padding-block: 56px;
+    margin: 0;
+  }
+  .wrap { max-width: 620px; margin: 0 auto; }
+
+  .mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+    margin-bottom: 40px;
+  }
+  .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  }
+
+  h1 {
+    font-size: clamp(32px, 6vw, 44px);
+    line-height: 1.15;
+    margin: 0 0 18px;
+    letter-spacing: -0.01em;
+  }
+  h1 .grad {
+    background: linear-gradient(100deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .lede {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text-muted);
+    max-width: 46ch;
+    margin: 0 0 36px;
+  }
+
+  .series {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .series-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .series-item .n {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+    display: block;
+  }
+  .series-item .t {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 44px;
+  }
+  .links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    background: var(--surface);
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    color: var(--text-muted);
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  footer a { color: var(--text-muted); text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mark"><span class="dot"></span>PULSEANDPIXELNET</div>
+
+  <h1>Feeding your curiosity, <span class="grad">one short at a time.</span></h1>
+  <p class="lede">Daily short-form videos on the mind, the universe, and the strange corners of history — built for the ten seconds before you scroll past.</p>
+
+  <div class="series">
+    <div class="series-item"><span class="n">Series</span><span class="t">Mind &amp; Brain Mysteries</span></div>
+    <div class="series-item"><span class="n">Series</span><span class="t">How It Really Works</span></div>
+    <div class="series-item"><span class="n">Series</span><span class="t">Hidden History</span></div>
+    <div class="series-item"><span class="n">Series</span><span class="t">Space &amp; Beyond</span></div>
+    <div class="series-item"><span class="n">Series</span><span class="t">Body Oddities</span></div>
+  </div>
+
+  <div class="links">
+    <a href="https://www.instagram.com/pulseandpixelnet" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/profile.php?id=1326300223895392" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.tiktok.com/@pulseandpixelnet" target="_blank" rel="noopener">TikTok</a>
+  </div>
+
+  <footer>
+    <span>© 2026 PulseAndPixelNet</span>
+    <span><a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></span>
+  </footer>
+</div>
+</body>
+</html>
+
